@@ -24,7 +24,8 @@ body{
   float: left;
   margin: 11px;
   display: table;
-  width: 45%;
+  width: calc(100%/2)-15px;
+  
 }
 
 .location-inner{
