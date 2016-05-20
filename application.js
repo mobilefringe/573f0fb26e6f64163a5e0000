@@ -1,7 +1,5 @@
 // Initialize app
-var myApp = new Framework7({
-    precompileTemplates: true
-});
+var myApp = new Framework7();
  
 // If we need to use custom DOM library, let's save it to $$ variable:
 var $ = Dom7;
@@ -28,16 +26,11 @@ function isSignedIn() {
 (function(){
 
   function addLocation(location) {
-    var html = Template7.templates.locationTemplate({
-      id: location.id,
-      imageUrl: location.logo_url
-    });
-    
-    console.log({
+    var html = cLocationTemplate({
       'id' : location.id,
       'imageUrl' : location.logo_url
     });
-    
+
     $('#locationsWrapper').append(html);
     _locations[location.id] = location;
   }
@@ -219,8 +212,8 @@ function isSignedIn() {
   }
 
 
-//   var locationTemplate = $('script#locationTemplate').html();
-//   var cLocationTemplate = Template7.compile(locationTemplate);
+  var locationTemplate = $('script#locationTemplate').html();
+  var cLocationTemplate = Template7.compile(locationTemplate);
 
   // Attach sign in handler
   $(document).on('signin', onSignInClicked);
