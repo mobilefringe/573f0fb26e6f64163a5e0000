@@ -29,8 +29,8 @@ function isSignedIn() {
 
   function addLocation(location) {
     var html = Template7.templates.locationTemplate({
-      'id' : location.id,
-      'imageUrl' : location.logo_url
+      id: location.id,
+      imageUrl: location.logo_url
     });
     
     console.log({
