@@ -40,13 +40,13 @@
         <!-- Top Navbar: Temporary since we'll be use built in navs-->
         <!--<div class="navbar">-->
         <!--  <div class="navbar-inner">-->
-            <!-- We need cool sliding animation on title element, so we have additional "sliding" class -->
+        <!--     We need cool sliding animation on title element, so we have additional "sliding" class -->
         <!--    <div class="center sliding">Resteraunt Crawl</div>-->
         <!--    <div class="right">-->
-              <!-- 
-                Right link contains only icon - additional "icon-only" class
-                Additional "open-panel" class tells app to open panel when we click on this link
-              -->
+               
+        <!--        Right link contains only icon - additional "icon-only" class-->
+        <!--        Additional "open-panel" class tells app to open panel when we click on this link-->
+              
         <!--      <a href="#" class="link" id="signIn">Sign In</a>-->
         <!--    </div>-->
         <!--  </div>-->
@@ -65,12 +65,14 @@
 
               <div id="locationsWrapper">
                 <script id="locationTemplate" type="text/template7">
-                    <div class="location" location-id="{{"{{id"}}}}">
+                    {% raw %}
+                    <div class="location" location-id="{{id}}">
                         <div class="location-inner">
-                            <img src="{{imageUrl}}">
+                            <img src="{{imageUrl}}" />
                         </div>
                     </div>
                 </script>
+                {% endraw %}
               </div>
               <!-- Link to another page -->
             </div>
