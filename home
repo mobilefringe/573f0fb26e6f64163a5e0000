@@ -17,9 +17,12 @@
    
     <!--CSS-->
     <!-- Path to Framework7 iOS CSS theme styles-->
-    <link rel="stylesheet" href="/libs/Framework7/dist/css/framework7.ios.min.css">
+    <link href="http://assets.codecloudapp.com/sites/573f0fcf6e6f645d4a570000/text/css/1463600904000/framework7.ios.min.css" rel="stylesheet">
+    
     <!-- Path to Framework7 iOS related color styles -->
-    <link rel="stylesheet" href="/libs/Framework7/dist/css/framework7.ios.colors.min.css">
+    <link href="http://assets.codecloudapp.com/sites/573f0fcf6e6f645d4a570000/text/css/1463600904000/framework7.ios.colors.css" rel="stylesheet">    
+    
+    
     <link href="/application.css" rel="stylesheet">
 </head>
 
