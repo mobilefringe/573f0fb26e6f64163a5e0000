@@ -71,7 +71,7 @@
                             <img src="{{imageUrl}}">
                         </div>
                     </div>
-                    {% end raw %}
+                    {% endraw %}
                 </script>
               </div>
               <!-- Link to another page -->
