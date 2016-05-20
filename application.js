@@ -30,7 +30,12 @@ function isSignedIn() {
       'id' : location.id,
       'imageUrl' : location.logo_url
     });
-
+    
+    console.log({
+      'id' : location.id,
+      'imageUrl' : location.logo_url
+    });
+    
     $('#locationsWrapper').append(html);
     _locations[location.id] = location;
   }
