@@ -68,7 +68,11 @@
                     {% raw %}
                     <div class="location" location-id="{{id}}">
                         <div class="location-inner">
-                            <img src="{{imageUrl}}">
+                            <div class="location-table">
+                                <div class="location-table-cell">
+                                    <img src="{{imageUrl}}">
+                                </div>
+                            </div>
                         </div>
                     </div>
                     {% endraw %}
