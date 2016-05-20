@@ -15,26 +15,30 @@ body{
 }
 
 #locationsWrapper { 
+  /* width: 100%; */
   display: table;
+  /* padding: 5px; */
   position: absolute;
+  /* height: 80%; */
   width: 100%;
+  width: 415px;
 }
 
 #locationsWrapper .location {
   float: left;
   margin: 11px;
   display: table;
-  width: calc(100%/2)-15px;
-  
 }
 
-.location-inner{
-//   width: 185px;
-//   height: 185px;
-  display: table-cell;
-  background-color: white;
-  vertical-align:middle;
-  text-align:center;
+@media only screen and (max-width: 568px){
+    .location-inner{
+      display: table-cell;
+      background-color: white;
+      vertical-align: middle;
+      text-align: center;
+      height: 138px;
+      width: 138px;
+    }
 }
 
 #locationsWrapper .location img{
