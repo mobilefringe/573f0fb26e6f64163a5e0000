@@ -53,6 +53,7 @@ function isSignedIn() {
 
     function onFail(){
       myApp.hidePreloader();
+      myApp.alert(__n['modalCheckinFailBody'], __n['modalCheckinFailTitle']);
      
     }
 
