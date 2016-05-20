@@ -1,0 +1,77 @@
+/*Created 2015-02-28 by the CodeCloud Team
+This is a Saas file has an 'Asset Type' of SCSS. CSS will be compiled when saving.
+For more information on asset types please see http://www.getcodecloud.com/docs#SaSS
+*/
+@import url('http://fonts.googleapis.com/css?family=Open+Sans');
+
+body{
+    color:#777;
+    font-family:'Open Sans';
+    background-color:blacks;
+}
+
+.page {
+  background-color:black;
+}
+
+#locationsWrapper { 
+  /* width: 100%; */
+  display: table;
+  /* padding: 5px; */
+  position: absolute;
+  /* height: 80%; */
+  width: 100%;
+}
+
+#locationsWrapper .location {
+  float: left;
+  margin: 11px;
+  display: table;
+}
+
+.location-inner{
+  width: 185px;
+  height: 185px;
+  display: table-cell;
+  background-color: white;
+  vertical-align:middle;
+  text-align:center;
+}
+
+#locationsWrapper .location img{
+  max-width: 80%;
+  max-height: 80%;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  opacity: 0.3;
+  filter: alpha(opacity=30); /* For IE8 and earlier */
+}
+
+#locationsWrapper .location.visited img{
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+  opacity: 1;
+  filter: alpha(opacity=1); /* For IE8 and earlier */
+
+}
+
+
+.checkin-complete{
+  text-align: center;
+  background-color: #F5A623;
+  padding: 5px;
+  color:white;
+  display:none;
+}
+
+.checkin-complete h4 {
+  margin: 0;
+  padding: 0;
+  font-weight: 800;
+  font-size: 1.1em;
+}
+
+.checkin-complete p {
+  padding: 0;
+  margin: 0.3em;
+}
