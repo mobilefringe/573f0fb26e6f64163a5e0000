@@ -44,10 +44,13 @@ function isSignedIn() {
       if (areAllCheckedIn()) {
         myApp.alert(__n['modalAllCheckedInBody'], __n['modalAllCheckedInTitle']);
       }
+      
+      console.log(result);
     }
 
     function onFail(){
       myApp.hidePreloader();
+     
     }
 
     myApp.showPreloader(__n["modalEnterCodeBusy"]);
