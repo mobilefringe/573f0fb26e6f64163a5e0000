@@ -219,8 +219,8 @@ function isSignedIn() {
   }
 
 
-  var locationTemplate = $('script#locationTemplate').html();
-  var cLocationTemplate = Template7.compile(locationTemplate);
+//   var locationTemplate = $('script#locationTemplate').html();
+//   var cLocationTemplate = Template7.compile(locationTemplate);
 
   // Attach sign in handler
   $(document).on('signin', onSignInClicked);
