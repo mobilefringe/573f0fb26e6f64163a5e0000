@@ -30,12 +30,14 @@ body{
   display: table;
 }
 
+.location-inner{
+    display: table-cell;
+    background-color: white;
+    vertical-align: middle;
+    text-align: center;
+}
+
 @media only screen and (max-width: 568px){
-    .location-inner{
-      display: table-cell;
-      background-color: white;
-      vertical-align: middle;
-      text-align: center;
       height: 138px;
       width: 138px;
     }
