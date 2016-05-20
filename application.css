@@ -21,6 +21,7 @@ body{
   position: absolute;
   /* height: 80%; */
   width: 100%;
+  width: 415px;
 }
 
 #locationsWrapper .location {
