@@ -44,8 +44,11 @@ function isSignedIn() {
       if (areAllCheckedIn()) {
         myApp.alert(__n['modalAllCheckedInBody'], __n['modalAllCheckedInTitle']);
       }
-      
-      console.log(result);
+    
+      // Display an error message if the checkin failed.
+      if (result['checked_in'] === false) {
+        myApp.alert(__n['modalCheckinFailBody'], __n['modalCheckinFailTitle']);        
+      }
     }
 
     function onFail(){
