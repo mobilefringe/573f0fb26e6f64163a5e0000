@@ -20,7 +20,7 @@ function triggerSignOut(){
 }
 
 function isSignedIn() {
-  return true;
+  return false;
 }
 
 (function(){
