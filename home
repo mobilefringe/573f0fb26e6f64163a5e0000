@@ -50,7 +50,7 @@
         <!--      <a href="#" class="link" id="signIn">Sign In</a>-->
         <!--    </div>-->
         <!--  </div>-->
-        </div>
+        <!--</div>-->
 
         <!-- Pages container, because we use fixed-through navbar and toolbar, it has additional appropriate classes-->
         <div class="pages navbar-through toolbar-through">
