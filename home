@@ -65,9 +65,9 @@
 
               <div id="locationsWrapper">
                 <script id="locationTemplate" type="text/template7">
-                    <div class="location" location-id="{{{id}}}">
+                    <div class="location" location-id="{{id}}">
                         <div class="location-inner">
-                            <img src="{{{imageUrl}}}" />
+                            <img src="{{imageUrl}}" />
                         </div>
                     </div>
                 </script>
