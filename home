@@ -65,11 +65,13 @@
 
               <div id="locationsWrapper">
                 <script id="locationTemplate" type="text/template7">
-                    <div class="location" location-id="{{"{{id"}}}}">
+                    {% raw %}
+                    <div class="location" location-id="{{id}}">
                         <div class="location-inner">
                             <img src="{{imageUrl}}">
                         </div>
                     </div>
+                    {% end raw %}
                 </script>
               </div>
               <!-- Link to another page -->
