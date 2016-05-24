@@ -22,7 +22,7 @@ function triggerSignOut(){
 }
 
 function isSignedIn() {
-  return localStorage.getItem('user_auth') !== null || localStorage.getItem('user_auth') !== undefined;
+  return getUserToken() !== null && getUserToken() !== undefined;
 }
 
 function getUserToken() {
@@ -198,7 +198,7 @@ function getUserToken() {
   
   
   function onSignOutClicked() {
-    localStorage.setItem('user_auth', null);    
+    localStorage.removeItem('user_auth');
   }
   
   function showSignIn(e){
