@@ -174,7 +174,7 @@ function getUserToken() {
 
   function onCreateAccountClicked(e){
     document.title = "Create An Account";
-    mainView.router.loadPage('/sign-upl');
+    mainView.router.loadPage('/sign-up');
   }
 
   function onSignInClicked(e){
