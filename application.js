@@ -253,7 +253,8 @@ function getUserToken() {
 
   // Attach sign in handler
   $(document).on('signin', onSignInClicked);
-
+  $(document).on('signout', onSignOutClicked);
+  
   $('#signIn').on('click', triggerSignIn);
 
 })();
