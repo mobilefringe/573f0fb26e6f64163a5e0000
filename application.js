@@ -2,7 +2,7 @@
 var myApp = new Framework7();
  
 // If we need to use custom DOM library, let's save it to $$ variable:
-var $ = Dom7;
+var $ = Dom7;s
  
 // Add view
 var mainView = myApp.addView('.view-main', {
@@ -174,7 +174,7 @@ function getUserToken() {
 
   function onCreateAccountClicked(e){
     document.title = "Create An Account";
-    mainView.router.loadPage('sign-up.html');
+    mainView.router.loadPage('/sign-upl');
   }
 
   function onSignInClicked(e){
