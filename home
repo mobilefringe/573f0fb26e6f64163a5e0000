@@ -89,6 +89,10 @@
     <!-- Path to Framework7 Library JS-->
     <script src="//s3.amazonaws.com/kodekloud/sites/573f0fcf6e6f645d4a570000/text/javascript/1463600904000/framework7.min.js"></script>
 
+    <!-- Localized variables -->
+    <script type="text/javascript" src="/env.js"></script>
+
+
     <!-- Localization -->
     <script type="text/javascript" src="/locale/en.js"></script>
 
