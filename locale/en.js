@@ -17,5 +17,6 @@ var __n = {
       'modalRegistrationSuccessBody': 'We just sent you an email to confirm your account',
       'modalSignInBusy' : 'Confirming Credentials',
       'modalSigninErrorBody' : 'It seems that the username or password are invalid. Please double check your credentials and try again.',
-      'modalSigninErrorTitle' : 'Hmmm'
+      'modalSigninErrorTitle' : 'Hmmm',
+      'modalRegistrationErrorsTitle' : 'Looks like you forgot something.'
 };
