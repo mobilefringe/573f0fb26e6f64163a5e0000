@@ -10,6 +10,13 @@ var mainView = myApp.addView('.view-main', {
   dynamicNavbar: true
 });
 
+var apis = null;
+var deviceToken = window.location.href.match(/dToken=(.*)/i)[1];
+
+// var host = 'http://twinpines.lvh.me:3000';
+var host = 'http://twinpines.mallmaverickstaging.com';
+// var host = 'https://mallcms.localtunnel.me';
+
 
 function triggerSignIn(){
   $(document).trigger('signin');
@@ -20,10 +27,15 @@ function triggerSignOut(){
 }
 
 function isSignedIn() {
-  return false;
+  return localStorage.getItem('user_auth') !== null || localStorage.getItem('user_auth') !== undefined;
 }
 
-(function(){
+function getUserToken() {
+  return localStorage.getItem('user_auth');
+}
+
+
+(function(){  
 
   function addLocation(location) {
     var html = cLocationTemplate({
@@ -77,11 +89,10 @@ function isSignedIn() {
 
   function onLocationClicked() {
     var locationId = $(this).attr('location-id');
-    var userToken = "TODO";
 
     myApp.prompt(__n['modalEnterCodeMessage'], __n['modalEnterCodeTitle'], function (value) {
       // verify todays code here.
-      verifyCode(value, locationId, userToken);
+      verifyCode(value, locationId, getUserToken());
     });
   }
 
@@ -158,11 +169,15 @@ function isSignedIn() {
       processCheckins(JSON.parse(result));
     }
 
-    $.post(host + apis['checkins'], {device_token: deviceToken, user_token: userToken}, onSuccess);
+    $.post(host + apis['checkins'], {device_token: deviceToken, user_token: getUserToken()}, onSuccess);
+  }
+
+  function onCreateAccountClicked(e){
+    document.title = "Create An Account";
+    mainView.router.loadPage('sign-up.html');
   }
 
   function onSignInClicked(e){
-
     // Display Buttons 
     var buttons = [
       [
@@ -171,7 +186,8 @@ function isSignedIn() {
           'onClick' : showSignIn
         },
         {
-          'text': __n['btnActionCreateAccount']
+          'text': __n['btnActionCreateAccount'],
+          onClick: onCreateAccountClicked
         }
       ], 
       [
@@ -189,27 +205,45 @@ function isSignedIn() {
     myApp.modalLogin('', __n['modalLoginTitle'], processSignIn);
   }
 
-  function onSignInSuccess(e) {
-    // Good Signin - 
+  function onSignInSuccess(result) {
+    // Store our auth token in our user auth.
+    localStorage.setItem('user_auth', result['user']['auth_token']);
+    
+    // Hide preloader.
+    myApp.hidePreloader();
+    
     // Update the toolbar callback.
     window.location = 'toolbar://login/signin/success';
   }
 
+  function onSignInError(result) {
+    myApp.hidePreloader();
+
+    myApp.alert(__n['modalSigninErrorBody'], __n['modalSigninErrorTitle']);
+
+  }
+
   function processSignIn(username, password){
-    console.log(username, password);
-    onSignInSuccess();
+    // console.log(username, password);
+    myApp.showPreloader(__n['modalSignInBusy']);
+
+    $.ajax({
+      url: host + apis['sign-in'],
+      data: {username: username, password: password, device_token: deviceToken},
+      method: 'POST',
+      dataType: 'json',
+      success: onSignInSuccess,
+      error: onSignInError
+    });
+
+    
   }
 
   // Get the json 
-  // var host = 'http://twinpines.lvh.me:3000';
-  var host = 'http://twinpines.mallmaverickstaging.com';
-  // var host = 'https://mallcms.localtunnel.me';
   var endPoint = '/api/v2/twinpines/loyalty_programs.json';
   var programName = 'dining-passport';
-  var deviceToken = window.location.href.match(/dToken=(.*)/i)[1];
-  var apis = null;
+  
   var _checkedInLocations = {};
-  var userToken = null;
   var _locations = {};
 
   try{
