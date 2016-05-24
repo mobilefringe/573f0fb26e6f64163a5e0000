@@ -12,4 +12,10 @@ var __n = {
       'modalCheckinFailTitle': "Whoops!",
       'modalCheckinFailTitle': 'Hmmm',
       'modalCheckinFailBody': "Seems like there was a problem verifying your code. Check that you're connected to a network and try again shortly.",
+      'modalRegistrationBusy': "Completing Registration",
+      'modalRegistrationSuccessTitle': "Great Job!",
+      'modalRegistrationSuccessBody': 'We just sent you an email to confirm your account',
+      'modalSignInBusy' : 'Confirming Credentials',
+      'modalSigninErrorBody' : 'It seems that the username or password are invalid. Please double check your credentials and try again.',
+      'modalSigninErrorTitle' : 'Hmmm'
 };
