@@ -195,7 +195,12 @@ function getUserToken() {
     myApp.actions(buttons);
 
   }
-
+  
+  
+  function onSignOutClicked() {
+    localStorage.setItem('user_auth', null);    
+  }
+  
   function showSignIn(e){
     myApp.modalLogin('', __n['modalLoginTitle'], processSignIn);
   }
