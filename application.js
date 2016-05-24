@@ -13,11 +13,6 @@ var mainView = myApp.addView('.view-main', {
 var apis = null;
 var deviceToken = window.location.href.match(/dToken=(.*)/i)[1];
 
-// var host = 'http://twinpines.lvh.me:3000';
-var host = 'http://twinpines.mallmaverickstaging.com';
-// var host = 'https://mallcms.localtunnel.me';
-
-
 function triggerSignIn(){
   $(document).trigger('signin');
 }
