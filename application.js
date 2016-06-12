@@ -118,7 +118,12 @@ function getUserToken() {
 
   }
   
-  function processCheckins(locations) {
+  function processCheckins(locations, animate) {
+    // Default animations to false.
+    if (animate == undefined) {
+        animate = false;
+    }
+    
     // If they passed in the locations then reset the cached version with those.
     if (locations !== null) {
       _checkedInLocations = locations;
@@ -126,9 +131,14 @@ function getUserToken() {
 
     // Loop over all our locations and change the class to those found to active.
     for (var id in _checkedInLocations) {
-      $('.location[location-id="' + id + '"]').
+
+      var location = $('.location[location-id="' + id + '"]').
         addClass('visited').
         off('click', onLocationClicked);
+        
+      if (animate && location.hasClass('visited') === false) {
+        location.addClass('tada');
+      }
     }
 
     if (areAllCheckedIn()){
