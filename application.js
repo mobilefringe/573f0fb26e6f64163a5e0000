@@ -45,7 +45,7 @@ function getUserToken() {
   function verifyCode(code, locationId, userToken) {
     
     function onSuccess(result){
-      processCheckins(result['checkins']);
+      processCheckins(result['checkins'], true);
       myApp.hidePreloader();
 
       if (areAllCheckedIn()) {
