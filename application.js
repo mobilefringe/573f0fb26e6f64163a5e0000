@@ -52,10 +52,15 @@ function getUserToken() {
         myApp.alert(__n['modalAllCheckedInBody'], __n['modalAllCheckedInTitle']);
       }
     
-      // Display an error message if the checkin failed.
+      // Display an error message if the checkin failed / or success message on checkin
       if (result['checked_in'] === false) {
         myApp.alert(__n['modalCheckinVerificationFailBody'], __n['modalCheckinVerificationFailTitle']);        
+      } else {
+        
+        myApp.alert(__n['modalVerificationSuccessBody'], __n['modalVerificationSuccessTitle']);        
       }
+      
+      
     }
 
     function onFail(){
