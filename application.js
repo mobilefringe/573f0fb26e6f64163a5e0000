@@ -137,7 +137,7 @@ function getUserToken() {
         off('click', onLocationClicked);
         
       if (animate && location.hasClass('visited') === false) {
-        location.addClass('tada');
+        location.find('img').addClass('animated tada');
       }
     }
 
