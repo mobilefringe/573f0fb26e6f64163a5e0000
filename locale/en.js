@@ -8,7 +8,7 @@ var __n = {
       'modalLoginTitle' : 'Sign In',
       'modalAllCheckedInTitle' : 'Congratulations!' , 
       'modalAllCheckedInBody' : 'Thanks for checking in at all our locations! Stop by Guest SErvices to redeem your prize.<br/><br/>Remember to Sign In to keep your check-ins saved in your account!',
-      'modalCheckinVerificationFailTitle': "The code you tried doesn't seem to be valid. Double check your code and try agian.",
+      'modalCheckinVerificationFailBody': "The code you tried doesn't seem to be valid. Double check your code and try agian.",
       'modalCheckinVerificationFailTitle': "Whoops!",
       'modalCheckinFailTitle': 'Hmmm',
       'modalCheckinFailBody': "Seems like there was a problem verifying your code. Check that you're connected to a network and try again shortly.",
