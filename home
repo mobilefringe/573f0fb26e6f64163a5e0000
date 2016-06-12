@@ -21,7 +21,7 @@
     
     <!-- Path to Framework7 iOS related color styles -->
     <link href="http://assets.codecloudapp.com/sites/573f0fcf6e6f645d4a570000/text/css/1463600904000/framework7.ios.colors.css" rel="stylesheet">    
-    
+    <link rel="stylesheet" href="http://s.mlcdn.co/animate.css">
     
     <link href="/application.css" rel="stylesheet">
 </head>
