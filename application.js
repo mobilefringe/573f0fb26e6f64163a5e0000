@@ -132,13 +132,16 @@ function getUserToken() {
     // Loop over all our locations and change the class to those found to active.
     for (var id in _checkedInLocations) {
 
-      var location = $('.location[location-id="' + id + '"]').
-        addClass('visited').
-        off('click', onLocationClicked);
-        
+      var location = $('.location[location-id="' + id + '"]');
+
       if (animate && location.hasClass('visited') === false) {
         location.find('img').addClass('animated tada');
       }
+
+      
+      location.
+        addClass('visited').
+        off('click', onLocationClicked);
     }
 
     if (areAllCheckedIn()){
