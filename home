@@ -94,7 +94,6 @@
     <!-- Localized variables -->
     <script type="text/javascript" src="/env.js"></script>
 
-
     <!-- Localization -->
     <script type="text/javascript" src="/locale/en.js"></script>
 
