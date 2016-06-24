@@ -1,6 +1,6 @@
 myApp.onPageInit('sign-up', function(page){
 
-  function onFormSubmit(e, errors) {
+  function onFormSubmit(errors, e) {
     e.preventDefault();
 
     if (errors.length > 0) {
@@ -61,7 +61,7 @@ myApp.onPageInit('sign-up', function(page){
     ],
     onFormSubmit);
 
-    // Perform the following actions on this page.
-    $('#sign-up form').on('submit', onFormSubmit);
+  // Perform the following actions on this page.
+  // $('#sign-up form').on('submit', onFormSubmit);
 
 });
