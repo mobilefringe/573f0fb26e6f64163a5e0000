@@ -1,6 +1,6 @@
 myApp.onPageInit('sign-up', function(page){
 
-  function onFormSubmit(errors, e) {
+  function onFormSubmit(e, errors) {
     e.preventDefault();
 
     if (errors.length > 0) {
