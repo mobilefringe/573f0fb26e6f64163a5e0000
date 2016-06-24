@@ -61,7 +61,7 @@ myApp.onPageInit('sign-up', function(page){
     ],
     onFormSubmit);
 
-  // Perform the following actions on this page.
-  // $('#sign-up form').on('submit', onFormSubmit);
+    // Perform the following actions on this page.
+    $('#sign-up form').on('submit', onFormSubmit);
 
 });
