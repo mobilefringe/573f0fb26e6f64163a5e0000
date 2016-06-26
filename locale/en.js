@@ -13,6 +13,7 @@ var __n = {
       'modalCheckinFailTitle': 'Hmmm',
       'modalCheckinFailBody': "Seems like there was a problem verifying your code. Check that you're connected to a network and try again shortly.",
       'modalRegistrationBusy': "Completing Registration",
+      'modalRegistrationUnknownErrorTitle' : "Hmm. There seems to be a problem.",
       'modalRegistrationUnknownError' : "A problem occurred during registration.<br/>Contact support if this problem persists.",      
       'modalRegistrationSuccessTitle': "Great Job!",
       'modalRegistrationSuccessBody': 'We just sent you an email to confirm your account',
