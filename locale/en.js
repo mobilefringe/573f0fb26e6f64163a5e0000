@@ -13,6 +13,7 @@ var __n = {
       'modalCheckinFailTitle': 'Hmmm',
       'modalCheckinFailBody': "Seems like there was a problem verifying your code. Check that you're connected to a network and try again shortly.",
       'modalRegistrationBusy': "Completing Registration",
+      'modalRegistrationUnknownError' : "A problem occurred during registration.<br/>Contact support if this problem persists.",      
       'modalRegistrationSuccessTitle': "Great Job!",
       'modalRegistrationSuccessBody': 'We just sent you an email to confirm your account',
       'modalSignInBusy' : 'Confirming Credentials',
@@ -21,5 +22,4 @@ var __n = {
       'modalRegistrationErrorsTitle' : 'Looks like you forgot something.',
       'modalVerificationSuccessTitle': 'Congrats!',
       'modalVerificationSuccessBody': "You've successfully checked-in"
-      'modalRegistrationUnknownError' : "A problem occurred during registration.<br/>Contact support if this problem persists."
 };
