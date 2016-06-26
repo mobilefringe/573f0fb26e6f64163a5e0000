@@ -21,4 +21,5 @@ var __n = {
       'modalRegistrationErrorsTitle' : 'Looks like you forgot something.',
       'modalVerificationSuccessTitle': 'Congrats!',
       'modalVerificationSuccessBody': "You've successfully checked-in"
+      'modalRegistrationUnknownError' : "A problem occurred during registration.<br/>Contact support if this problem persists."
 };
