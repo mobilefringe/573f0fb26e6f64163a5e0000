@@ -17,7 +17,7 @@ myApp.onPageInit('sign-up', function(page){
     }
 
     function onError(result) {
-      myApp.alert(__n['modalRegistrationUnknownError'], __n['modalRegistrationErrorsTitle']);
+      myApp.alert(__n['modalRegistrationUnknownError'], __n['modalRegistrationUnknownErrorTitle']);
       myApp.hidePreloader();
     }
 
