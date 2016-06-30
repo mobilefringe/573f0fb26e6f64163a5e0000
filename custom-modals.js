@@ -5,7 +5,7 @@ var failedLogin = function() {
         verticalButtons: true,
         buttons: [
             {
-                text: 'Button 1',
+                text: --n['btnActionOK'],
                 onClick: function() {
                     myApp.alert('You clicked first button!')
                 }
