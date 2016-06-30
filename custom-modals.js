@@ -11,7 +11,7 @@ var failedLogin = function() {
             {
                 text: __n['modalResetPassword'],
                 onClick: function() {
-                    myApp.prompt(__n['modalEnterEmail'], __n['modalResetPassword']);
+                    myApp.prompt(__n['modalEnterEmail'], __n['modalResetPassword'], processForgetPassword);
                 }
             }
         ]
