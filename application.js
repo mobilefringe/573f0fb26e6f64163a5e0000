@@ -260,7 +260,7 @@ function getUserToken() {
     
   }
   function processForgetPassword(){
-      
+      alert("yo")
   }
 
   // Get the json 
