@@ -239,8 +239,7 @@ function getUserToken() {
 
   function onSignInError(result) {
     myApp.hidePreloader();
-    myApp.failed_login
-    myApp.alert(__n['modalSigninErrorBody'], __n['modalSigninErrorTitle']);
+    failed_login
 
   }
 
