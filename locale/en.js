@@ -23,5 +23,6 @@ var __n = {
       'modalRegistrationErrorsTitle' : 'Looks like you forgot something.',
       'modalVerificationSuccessTitle': 'Congrats!',
       'modalVerificationSuccessBody': "You've successfully checked-in",
-      'modalUsername': "Email"
+      'modalUsername': "Email",
+      'modalResetPassword' : "Reset your password"
 };
