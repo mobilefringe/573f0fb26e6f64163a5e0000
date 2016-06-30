@@ -5,6 +5,7 @@ var __n = {
       'btnActionSignIn' : 'Sign In',
       'btnActionCreateAccount' : 'Create Account',
       'btnActionCancel' : 'Cancel',
+      'btnActionOK' : 'OK',
       'modalLoginTitle' : 'Sign In',
       'modalAllCheckedInTitle' : 'Congratulations!' , 
       'modalAllCheckedInBody' : 'Thanks for checking in at all our locations! Stop by Guest Services to redeem your prize.<br/><br/>Remember to Sign In to keep your check-ins saved in your account!',
