@@ -6,9 +6,7 @@ var failedLogin = function() {
         buttons: [
             {
                 text: --n['btnActionOK'],
-                onClick: function() {
-                    myApp.alert('You clicked first button!')
-                }
+                close: true
             },
             {
                 text: __n['modalResetPassword'],
