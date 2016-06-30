@@ -1,6 +1,6 @@
 // Initialize app
 var myApp = new Framework7({
-    modalUsernamePlaceholder: "Email"
+    modalUsernamePlaceholder: __n['modalUsername']
 });
  
 // If we need to use custom DOM library, let's save it to $$ variable:
