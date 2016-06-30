@@ -285,3 +285,7 @@ function getUserToken() {
   $('#signIn').on('click', triggerSignIn);
 
 })();
+
+function processForgetPassword(){
+  alert("yo")
+}
