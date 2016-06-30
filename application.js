@@ -286,6 +286,6 @@ function getUserToken() {
 
 })();
 
-function processForgetPassword(){
+function processForgetPassword(email){
   alert("yo")
 }
