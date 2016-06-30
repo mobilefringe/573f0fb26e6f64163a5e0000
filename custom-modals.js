@@ -11,7 +11,7 @@ var failedLogin = function() {
                 }
             },
             {
-                text: 'Button 2',
+                text: __n['modalResetPassword'],
                 onClick: function() {
                     myApp.alert('You clicked second button!')
                 }
