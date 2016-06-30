@@ -24,5 +24,5 @@ var __n = {
       'modalVerificationSuccessTitle': 'Congrats!',
       'modalVerificationSuccessBody': "You've successfully checked-in",
       'modalUsername': "Email",
-      'modalResetPassword' : "Reset your password"
+      'modalResetPassword' : "Reset your password",
 };
