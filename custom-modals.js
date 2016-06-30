@@ -6,7 +6,7 @@ var failedLogin = function() {
         buttons: [
             {
                 text: --n['btnActionOK'],
-                close: true
+                close: true;
             },
             {
                 text: __n['modalResetPassword'],
