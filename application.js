@@ -219,6 +219,7 @@ function getUserToken() {
   
   function onSignOutClicked() {
     localStorage.removeItem('user_auth');
+    window.location = 'toolbar://login/signin/success';
   }
   
   function showSignIn(e){
