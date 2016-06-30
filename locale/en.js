@@ -7,7 +7,7 @@ var __n = {
       'btnActionCancel' : 'Cancel',
       'modalLoginTitle' : 'Sign In',
       'modalAllCheckedInTitle' : 'Congratulations!' , 
-      'modalAllCheckedInBody' : 'Thanks for checking in at all our locations! Stop by Guest SErvices to redeem your prize.<br/><br/>Remember to Sign In to keep your check-ins saved in your account!',
+      'modalAllCheckedInBody' : 'Thanks for checking in at all our locations! Stop by Guest Services to redeem your prize.<br/><br/>Remember to Sign In to keep your check-ins saved in your account!',
       'modalCheckinVerificationFailBody': "The code you tried doesn't seem to be valid. Double check your code and try agian.",
       'modalCheckinVerificationFailTitle': "Whoops!",
       'modalCheckinFailTitle': 'Hmmm',
