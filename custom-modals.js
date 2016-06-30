@@ -5,7 +5,7 @@ var failedLogin = function() {
         verticalButtons: true,
         buttons: [
             {
-                text: --n['btnActionOK'],
+                text: __n['btnActionOK'],
                 close: true,
             },
             {
