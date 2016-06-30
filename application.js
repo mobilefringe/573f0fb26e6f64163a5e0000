@@ -225,6 +225,7 @@ function getUserToken() {
   function showSignIn(e){
     myApp.modalLogin('', __n['modalLoginTitle'], processSignIn);
   }
+  
 
   function onSignInSuccess(result) {
     // Store our auth token in our user auth.
@@ -257,6 +258,9 @@ function getUserToken() {
     });
 
     
+  }
+  function processForgetPassword(){
+      
   }
 
   // Get the json 
