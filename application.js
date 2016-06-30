@@ -259,9 +259,7 @@ function getUserToken() {
 
     
   }
-  function processForgetPassword(){
-      alert("yo")
-  }
+  
 
   // Get the json 
   var endPoint = '/api/v2/twinpines/loyalty_programs.json';
