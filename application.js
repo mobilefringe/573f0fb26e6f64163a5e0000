@@ -239,7 +239,7 @@ function getUserToken() {
 
   function onSignInError(result) {
     myApp.hidePreloader();
-    failed_login()
+    failed_login();
 
   }
 
