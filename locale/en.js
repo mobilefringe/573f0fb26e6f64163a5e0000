@@ -22,5 +22,6 @@ var __n = {
       'modalSigninErrorTitle' : 'Hmmm',
       'modalRegistrationErrorsTitle' : 'Looks like you forgot something.',
       'modalVerificationSuccessTitle': 'Congrats!',
-      'modalVerificationSuccessBody': "You've successfully checked-in"
+      'modalVerificationSuccessBody': "You've successfully checked-in",
+      'modalUsername': "Email"
 };
