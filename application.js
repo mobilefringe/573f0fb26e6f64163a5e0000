@@ -305,7 +305,7 @@ function onForgetPasswordSuccess(result){
 }
 
 function onForgetPasswordError(result){
-    
+  myApp.hidePreloader();
 }
 
 
