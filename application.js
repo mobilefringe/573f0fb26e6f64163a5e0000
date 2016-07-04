@@ -292,9 +292,7 @@ function processForgetPassword(email){
   url: host + apis['sign-in'],
   data: {username: username, password: password, device_token: deviceToken},
   method: 'POST',
-  dataType: 'json',
-  success: onSignInSuccess,
-  error: onSignInError
+  dataType: 'json'
 });
 
 }
