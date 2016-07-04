@@ -288,7 +288,15 @@ function getUserToken() {
 
 function processForgetPassword(email){
   myApp.showPreloader(__n['modalForgetPasswordBusy']);
-  console.log(email)
+  $.ajax({
+  url: host + apis['sign-in'],
+  data: {username: username, password: password, device_token: deviceToken},
+  method: 'POST',
+  dataType: 'json',
+  success: onSignInSuccess,
+  error: onSignInError
+});
+
 }
 
 
