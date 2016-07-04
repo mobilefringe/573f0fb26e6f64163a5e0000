@@ -293,6 +293,7 @@ function processForgetPassword(email){
   data: {email: email},
   method: 'POST',
   dataType: 'json'
+  success: onForgetPasswordSuccess,
 });
 
 }
