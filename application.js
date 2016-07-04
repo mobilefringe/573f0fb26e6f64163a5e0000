@@ -304,6 +304,10 @@ function onForgetPasswordSuccess(result){
   myApp.alert(__n['modalForgetPasswordEmailSent']);
 }
 
+function onForgetPasswordError(result){
+    
+}
+
 
 
 
