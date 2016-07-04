@@ -301,7 +301,7 @@ function processForgetPassword(email){
 function onForgetPasswordSuccess(result){
   // Hide preloader.
   myApp.hidePreloader();
-  myApp.alert(__n['modalForgetPasswordEmailSent']);
+  myApp.alert(__n['modalForgetPasswordEmailSent'], '');
 }
 
 function onForgetPasswordError(result){
