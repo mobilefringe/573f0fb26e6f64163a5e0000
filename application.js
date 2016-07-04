@@ -299,9 +299,8 @@ function processForgetPassword(email){
 }
 
 function onForgetPasswordSuccess(result){
-    // Hide preloader.
-    myApp.hidePreloader();
-  }
+  // Hide preloader.
+  myApp.hidePreloader();
 }
 
 
