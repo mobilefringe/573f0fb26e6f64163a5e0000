@@ -27,5 +27,6 @@ var __n = {
       'modalVerificationSuccessBody': "You've successfully checked-in",
       'modalUsername': "Email",
       'modalResetPassword' : "Reset your password",
-      'modalEnterEmail' : "Please enter your email."
+      'modalEnterEmail' : "Please enter your email.",
+      'modalForgetPasswordEmailSent' : "An email has been sent to you, please follow the instructions to reset your password."
 };
