@@ -290,7 +290,7 @@ function processForgetPassword(email){
   myApp.showPreloader(__n['modalForgetPasswordBusy']);
   $.ajax({
   url: host + apis['sign-in'],
-  data: {username: username, password: password, device_token: deviceToken},
+  data: {email: email},
   method: 'POST',
   dataType: 'json'
 });
