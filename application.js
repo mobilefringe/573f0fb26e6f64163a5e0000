@@ -292,7 +292,7 @@ function processForgetPassword(email){
     url: host + apis['reset_password'],
     data: {email: email},
     method: 'POST',
-    dataType: 'json'
+    dataType: 'json',
     success: onForgetPasswordSuccess,
     error: onForgetPasswordError
   });
