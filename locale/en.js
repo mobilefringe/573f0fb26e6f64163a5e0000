@@ -21,6 +21,7 @@ var __n = {
       'modalSignInBusy' : 'Confirming Credentials',
       'modalSigninErrorBody' : 'It seems that the email or password are invalid. Please double check your credentials and try again.',
       'modalSigninErrorTitle' : 'Hmmm',
+      'modalForgetPasswordBusy': 'Finding your account',
       'modalRegistrationErrorsTitle' : 'Looks like you forgot something.',
       'modalVerificationSuccessTitle': 'Congrats!',
       'modalVerificationSuccessBody': "You've successfully checked-in",
