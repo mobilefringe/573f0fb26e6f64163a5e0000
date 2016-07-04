@@ -294,6 +294,7 @@ function processForgetPassword(email){
   method: 'POST',
   dataType: 'json'
   success: onForgetPasswordSuccess,
+  error: onForgetPasswordError
 });
 
 }
