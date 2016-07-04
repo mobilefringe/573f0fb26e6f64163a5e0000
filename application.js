@@ -287,7 +287,7 @@ function getUserToken() {
 })();
 
 function processForgetPassword(email){
-    myApp.showPreloader(__n['modalSignInBusy']);
+  myApp.showPreloader(__n['modalForgetPasswordBusy']);
   console.log(email)
 }
 
