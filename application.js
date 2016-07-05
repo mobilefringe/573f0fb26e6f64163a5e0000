@@ -24,7 +24,11 @@ function triggerSignOut(){
 }
 
 function isSignedIn() {
-  return getUserToken() !== null && getUserToken() !== undefined;
+  if (getUserToken() !== null && getUserToken() !== undefined) {
+    window.location = ‘toolbar://login/signin/success';
+  } else {
+    window.location = ‘toolbar://login/signout/success';
+  }
 }
 
 function getUserToken() {
