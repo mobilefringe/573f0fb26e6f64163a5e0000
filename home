@@ -62,7 +62,11 @@
                     <h4>Congratulations</h4>
                     <p>Stop by Guest Services and Redeem Your Prize</p>
                   </div>
-    
+                  <div id="bannerWrapper">
+                    <script id="bannerTemplate" type="text/template7">  
+                      <img src="{{imageUrl}}">
+                    </script>
+                  </div>
                   <div id="locationsWrapper">
                     <script id="locationTemplate" type="text/template7">
                         {% raw %}
