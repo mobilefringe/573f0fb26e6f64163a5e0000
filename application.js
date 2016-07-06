@@ -291,7 +291,7 @@ function getUserToken() {
   var bannerTemplate = $('script#bannerTemplate').html();
   var cBannerTemplate = Template7.compile(bannerTemplate);
     var html = cBannerTemplate({
-      'imageUrl' : url
+      'imageUrl' : "http://localhost:3000/system/loyalty_programs/logos/000/000/001/original/darth-vader-star-wars-movies-1920x1080-wallpaper328540.jpg?1467828501"
     });
     $('#bannerWrapper').append(html);
   // Attach sign in handler
