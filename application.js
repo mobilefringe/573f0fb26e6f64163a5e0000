@@ -51,7 +51,7 @@ function getUserToken() {
       'id' : location.id,
       'imageUrl' : location.logo_url
     });
-    console.log(html)
+    
     $('#locationsWrapper').append(html);
     _locations[location.id] = location;
   }
