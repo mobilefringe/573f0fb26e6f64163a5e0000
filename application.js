@@ -288,7 +288,7 @@ function getUserToken() {
   var cLocationTemplate = Template7.compile(locationTemplate);
   
   var bannerTemplate = $('script#bannerTemplate').html();
-  var cBannerTemplate = Template7.compile(locationTemplate);
+  var cBannerTemplate = Template7.compile(bannerTemplate);
 
   // Attach sign in handler
   $(document).on('signin', onSignInClicked);
