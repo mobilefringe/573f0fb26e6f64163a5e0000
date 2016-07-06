@@ -116,6 +116,7 @@ function getUserToken() {
       }
 
       var lp = result['loyalty_programs'][programName];
+      renderBanner(lp['logo']);
       lp['details']['locations'].forEach(function(location){
         addLocation(location);
         apis = lp['details']['endpoints'];
