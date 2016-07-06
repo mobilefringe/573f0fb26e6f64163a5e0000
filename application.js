@@ -290,11 +290,7 @@ function getUserToken() {
   
   var bannerTemplate = $('script#bannerTemplate').html();
   var cBannerTemplate = Template7.compile(bannerTemplate);
-  var html = cBannerTemplate({
-      'imageUrl' : url
-    });
-    console.log(html)
-    $('#bannerWrapper').append(html);
+  
 
   // Attach sign in handler
   $(document).on('signin', onSignInClicked);
