@@ -39,7 +39,11 @@ function getUserToken() {
 (function(){  
 
   function renderBanner(url){
-    
+    var html = cBannerTemplate({
+      'imageUrl' : url
+    });
+    console.log(html)
+    $('#bannerWrapper').append(html);
   }
 
   function addLocation(location) {
@@ -290,7 +294,6 @@ function getUserToken() {
   
   var bannerTemplate = $('script#bannerTemplate').html();
   var cBannerTemplate = Template7.compile(bannerTemplate);
-  
 
   // Attach sign in handler
   $(document).on('signin', onSignInClicked);
