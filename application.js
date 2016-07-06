@@ -52,7 +52,7 @@ function getUserToken() {
       'imageUrl' : location.logo_url
     });
     
-    // $('#locationsWrapper').append(html);
+    $('#locationsWrapper').append(html);
     _locations[location.id] = location;
   }
 
