@@ -43,7 +43,7 @@ function getUserToken() {
       'imageUrl' : url
     });
     console.log(html)
-    $('#bannerWrapper').html(html);
+    $('#bannerWrapper').append(html);
   }
 
   function addLocation(location) {
