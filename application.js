@@ -39,10 +39,7 @@ function getUserToken() {
 (function(){  
 
   function renderBanner(url){
-    var html = cBannerTemplate({
-      'imageUrl' : url
-    });
-    $('#bannerWrapper').append(html);
+    
   }
 
   function addLocation(location) {
