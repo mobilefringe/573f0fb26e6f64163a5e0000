@@ -42,7 +42,7 @@ function getUserToken() {
     var html = cBannerTemplate({
       'imageUrl' : url
     });
-    console.log(url)
+    console.log(html)
     $('#bannerWrapper').html(html);
   }
 
