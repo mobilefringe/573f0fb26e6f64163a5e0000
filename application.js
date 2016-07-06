@@ -39,7 +39,10 @@ function getUserToken() {
 (function(){  
 
   function renderBanner(url){
-      
+    var html = cLocationTemplate({
+      'imageUrl' : url
+    });
+    $('#bannerWrapper').append(html);
   }
 
   function addLocation(location) {
@@ -47,7 +50,7 @@ function getUserToken() {
       'id' : location.id,
       'imageUrl' : location.logo_url
     });
-
+    
     $('#locationsWrapper').append(html);
     _locations[location.id] = location;
   }
