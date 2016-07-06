@@ -38,6 +38,10 @@ function getUserToken() {
 
 (function(){  
 
+  function renderBanner(url){
+      
+  }
+
   function addLocation(location) {
     var html = cLocationTemplate({
       'id' : location.id,
@@ -282,6 +286,9 @@ function getUserToken() {
 
   var locationTemplate = $('script#locationTemplate').html();
   var cLocationTemplate = Template7.compile(locationTemplate);
+  
+  var bannerTemplate = $('script#bannerTemplate').html();
+  var cBannerTemplate = Template7.compile(locationTemplate);
 
   // Attach sign in handler
   $(document).on('signin', onSignInClicked);
