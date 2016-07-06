@@ -123,7 +123,7 @@ function getUserToken() {
       }
 
       var lp = result['loyalty_programs'][programName];
-      console.log(lp['logo'])
+      
       renderBanner(lp['logo']);
       lp['details']['locations'].forEach(function(location){
         addLocation(location);
