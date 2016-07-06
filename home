@@ -65,7 +65,7 @@
                   <div id="bannerWrapper">
                     <script id="bannerTemplate" type="text/template7">  
                       {% raw %}
-                        <img src="{{bannerUrl}}" />
+                        <img src="{{bannerUrl}}" class="main_banner" />
                       {% endraw %}
                     </script>
                   </div>
