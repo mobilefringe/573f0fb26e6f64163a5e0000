@@ -64,7 +64,9 @@
                   </div>
                   <div id="bannerWrapper">
                     <script id="bannerTemplate" type="text/template7">  
-                      <img src="{{bannerUrl}}" />
+                      {% raw %}
+                        <img src="{{bannerUrl}}" />
+                      {% endraw %}
                     </script>
                   </div>
                   <div id="locationsWrapper">
