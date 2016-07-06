@@ -64,7 +64,7 @@
                   </div>
                   <div id="bannerWrapper">
                     <script id="bannerTemplate" type="text/template7">  
-                      <img src="{{banner_url}}" />
+                      <img src="{{bannerUrl}}" />
                     </script>
                   </div>
                   <div id="locationsWrapper">
