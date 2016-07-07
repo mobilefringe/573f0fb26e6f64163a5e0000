@@ -1,6 +1,14 @@
-$(document).ready(function(){
-    
+function onFormSubmit(errors, e) {
+    e.preventDefault();
 
+    if (errors.length > 0) {
+      // Display an alert with all our errors
+      myApp.alert(errors[0].messages.join("<br/>"), __n['modalRegistrationErrorsTitle']);
+      return false;
+    }
+}
+
+$(document).ready(function(){
   var validator = new FormValidator('reset-password-form', 
     [
       {
