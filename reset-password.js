@@ -1,8 +1,5 @@
 $(document).ready(function(){
-    $('#reset-password-form').submit(function(){
     
-    return false;
-  })
 
   var validator = new FormValidator('reset-password-form', 
     [
