@@ -4,7 +4,7 @@ $(document).ready(function(){
     return false;
   })
 
-  var validator = new FormValidator('reset-password', 
+  var validator = new FormValidator('reset-password-form', 
     [
       {
         name: 'password',
