@@ -3,7 +3,7 @@ function onFormSubmit(errors, e) {
 
     if (errors.length > 0) {
       // Display an alert with all our errors
-      myApp.alert(errors[0].messages.join("<br/>"), __n['modalRegistrationErrorsTitle']);
+      alert(errors[0].messages);
       return false;
     }
 }
