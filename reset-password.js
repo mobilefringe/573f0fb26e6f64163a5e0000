@@ -40,16 +40,6 @@ myApp.onPageInit('sign-up', function(page){
   var validator = new FormValidator('sign-up-form', 
     [
       {
-        name: 'name',
-        display: 'Name',
-        rules: 'required'
-      },
-      {
-        name: 'email',
-        display: 'Email',
-        rules: 'required|valid_email'
-      },
-      {
         name: 'password',
         display: 'Password',
         rules: 'required|min_length[4]'
