@@ -1,4 +1,5 @@
 function onFormSubmit(errors, e) {
+    var el = "#error_box"
     e.preventDefault();
     if (errors.length > 0) {
         var errorString = '';
