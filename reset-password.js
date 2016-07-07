@@ -1,5 +1,6 @@
 $(function(){
     $('#reset-password-form').submit(function(){
+        console.log("here")
         $.ajax({
           url: endpoint,
           data: formData,
