@@ -1,6 +1,6 @@
 $(function(){
     $('#reset-password-form').submit(function(){
-        console.log("here")
+        alert("")
         
 
     return false;
