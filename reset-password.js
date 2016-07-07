@@ -1,38 +1,4 @@
-// Initialize app
-var myApp = new Framework7({
-    modalUsernamePlaceholder: __n['modalUsername']
-});
- 
-// If we need to use custom DOM library, let's save it to $$ variable:
-var $ = Dom7;
- 
-// Add view
-var mainView = myApp.addView('.view-main', {
-  // Because we want to use dynamic navbar, we need to enable it for this view:
-  dynamicNavbar: true
-});
-myApp.onPageInit('reset-password', function(page){
 
-  function onFormSubmit(errors, e) {
-    e.preventDefault();
-
-    if (errors.length > 0) {
-      // Display an alert with all our errors
-      myApp.alert(errors[0].messages.join("<br/>"), __n['modalRegistrationErrorsTitle']);
-      return false;
-    }
-
-    function onSuccess(result) {      
-      myApp.hidePreloader();
-
-      mainView.router.back();
-      myApp.alert(__n['modalRegistrationSuccessBody'], __n['modalRegistrationSuccessTitle']);
-    }
-
-    function onError(result) {
-      myApp.alert(__n['modalRegistrationUnknownError'], __n['modalRegistrationUnknownErrorTitle']);
-      myApp.hidePreloader();
-    }
 
     var formData = new FormData(e.target);
     var endpoint = host + apis['registration'];
@@ -62,8 +28,7 @@ myApp.onPageInit('reset-password', function(page){
         display: 'Password Confirmation',
         rules: 'required|matches[password]'
       }
-    ],
-    onFormSubmit);
+    ]);
 
   // Perform the following actions on this page.
   // $('#sign-up form').on('submit', onFormSubmit);
