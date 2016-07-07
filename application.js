@@ -48,7 +48,7 @@ function getUserToken() {
   function addLocation(location) {
     var html = cLocationTemplate({
       'id' : location.id,
-      'imageUrl' : location.banner_url
+      'imageUrl' : location.logo_url
     });
     
     $('#locationsWrapper').append(html);
@@ -124,7 +124,7 @@ function getUserToken() {
 
       var lp = result['loyalty_programs'][programName];
       
-      renderBanner(lp['logo']);
+      renderBanner(lp['banner']);
       lp['details']['locations'].forEach(function(location){
         addLocation(location);
         apis = lp['details']['endpoints'];
