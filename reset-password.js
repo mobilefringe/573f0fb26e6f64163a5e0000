@@ -1,5 +1,5 @@
 $(function(){
-    $('#reset-password').submit(function(){
+    $('#reset-password-form').submit(function(){
         $.ajax({
           url: endpoint,
           data: formData,
