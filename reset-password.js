@@ -1,4 +1,4 @@
-myApp.onPageInit('sign-up', function(page){
+myApp.onPageInit('reset-password', function(page){
 
   function onFormSubmit(errors, e) {
     e.preventDefault();
