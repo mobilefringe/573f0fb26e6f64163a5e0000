@@ -2,9 +2,11 @@ function onFormSubmit(errors, e) {
     e.preventDefault();
 
     if (errors.length > 0) {
-      // Display an alert with all our errors
-      alert(errors[0].messages);
-      return false;
+        var errorString = '';
+        for (var i = 0, errorLength = errors.length; i < errorLength; i++) {
+            errorString += errors[i].message + '<br />';
+        }
+        el.innerHTML = errorString;
     }
 }
 
