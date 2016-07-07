@@ -50,7 +50,7 @@ myApp.onPageInit('reset-password', function(page){
     return false;
   }
 
-  var validator = new FormValidator('sign-up-form', 
+  var validator = new FormValidator('reset-password', 
     [
       {
         name: 'password',
