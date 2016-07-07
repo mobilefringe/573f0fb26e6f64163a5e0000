@@ -1,4 +1,4 @@
-$(function(){
+
     
   var validator = new FormValidator('reset-password', 
     [
@@ -17,4 +17,3 @@ $(function(){
   // Perform the following actions on this page.
   // $('#sign-up form').on('submit', onFormSubmit);
 
-})
