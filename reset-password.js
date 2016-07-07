@@ -1,3 +1,16 @@
+// Initialize app
+var myApp = new Framework7({
+    modalUsernamePlaceholder: __n['modalUsername']
+});
+ 
+// If we need to use custom DOM library, let's save it to $$ variable:
+var $ = Dom7;
+ 
+// Add view
+var mainView = myApp.addView('.view-main', {
+  // Because we want to use dynamic navbar, we need to enable it for this view:
+  dynamicNavbar: true
+});
 myApp.onPageInit('reset-password', function(page){
 
   function onFormSubmit(errors, e) {
