@@ -13,7 +13,7 @@ $(document).ready(function(){
         display: 'Password Confirmation',
         rules: 'required|matches[password]'
       }
-    ]);
+    ], onFormSubmit);
 
   // Perform the following actions on this page.
   // $('#sign-up form').on('submit', onFormSubmit);
