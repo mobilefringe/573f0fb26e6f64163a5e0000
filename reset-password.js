@@ -1,17 +1,5 @@
 $(function(){
-    $('#reset-password-form').submit(function(){
-        $.ajax({
-          url: endpoint,
-          data: formData,
-          success: onSuccess,
-          error: onError,
-          method: 'POST',
-          dataType: 'json'
-        });
-
-    return false;
-  })
-
+    
   var validator = new FormValidator('reset-password', 
     [
       {
