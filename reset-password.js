@@ -1,8 +1,6 @@
-$(function(){
+$(document).ready(function(){
     $('#reset-password-form').submit(function(){
-        alert("")
-        
-
+    alert("df")
     return false;
   })
 
