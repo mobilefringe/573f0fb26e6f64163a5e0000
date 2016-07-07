@@ -1,9 +1,4 @@
-
-
-    var formData = new FormData(e.target);
-    var endpoint = host + apis['registration'];
-    myApp.showPreloader(__n["modalRegistrationBusy"]);
-
+$(function(){
     $.ajax({
       url: endpoint,
       data: formData,
@@ -33,4 +28,4 @@
   // Perform the following actions on this page.
   // $('#sign-up form').on('submit', onFormSubmit);
 
-});
+})
