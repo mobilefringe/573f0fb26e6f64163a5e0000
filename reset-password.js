@@ -65,7 +65,8 @@ function submitForm(data, url){
 }
 
 function resetSuccess(result) {      
-    alert(__n['resetSuccess']) 
+    alert(__n['resetSuccess']);
+    $('#reset-password-form').trigger('reset');
 }
     
 function resetError(result) {
