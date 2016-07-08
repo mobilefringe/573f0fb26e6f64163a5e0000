@@ -6,7 +6,6 @@ function onFormSubmit(errors, e) {
         for (var i = 0, errorLength = errors.length; i < errorLength; i++) {
             errorString += errors[i].message + '<br />';
         }
-        console.log(errorString)
         $(el).html(errorString);
     }
 }
