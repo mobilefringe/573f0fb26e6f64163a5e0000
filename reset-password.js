@@ -53,8 +53,8 @@ $(document).ready(function(){
 
 function submitForm(data, url){
     $.ajax({
-        url: endpoint,
-        data: formData,
+        url: url,
+        data: data,
         success: onSuccess,
         error: onError,
         method: 'POST',
