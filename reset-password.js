@@ -52,6 +52,7 @@ $(document).ready(function(){
 })
 
 function submitForm(data, url){
+    console.log(url)
     $.ajax({
         url: url,
         data: data,
