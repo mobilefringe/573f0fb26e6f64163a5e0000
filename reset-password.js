@@ -65,7 +65,7 @@ function submitForm(data, url){
 }
 
 function resetSuccess(result) {      
-    alert(result) 
+    alert(__n['resetSuccess']) 
 }
     
 function resetError(result) {
