@@ -10,7 +10,7 @@ function onFormSubmit(errors, e) {
         $(el).show();
         return false;
     }
-   
+   console.log(e.target)
     var formData = new FormData(e.target);
     formData.append('reset_password_token', getUrlParameter('reset_password_token'))
      
