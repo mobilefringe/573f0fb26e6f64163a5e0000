@@ -11,6 +11,8 @@ function onFormSubmit(errors, e) {
         return false;
     }
     var formData = new FormData(e.target);
+    formData.append(reset_pass_token, getUrlParameter('reset_password_token'))
+    
     var endPoint = '/api/v2/twinpines/loyalty_programs.json';
     var programName = 'dining-passport';
     
