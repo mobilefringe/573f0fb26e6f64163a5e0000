@@ -17,6 +17,7 @@ function onFormSubmit(errors, e) {
     var programName = 'dining-passport';
     
     $.getJSON(host + endPoint, null, function(result) {
+        console.log("here")
         lp = result['loyalty_programs'][programName];
         if (lp === undefined) {
             throw "Loyalty program does not exist";
@@ -24,7 +25,7 @@ function onFormSubmit(errors, e) {
         var lp = result['loyalty_programs'][programName];
         var submitUrl = lp.details.endpoints.update_password;
         // submitForm(formData, submitUrl);
-        console.log("here")
+        
     }, 'json');
 }
 
