@@ -8,7 +8,6 @@ function onFormSubmit(errors, e) {
         }
         $(el).html(errorString);
         $(el).show();
-        console.log("error")
         return false;
     }
    
