@@ -15,9 +15,9 @@ function onFormSubmit(errors, e) {
     
     var endPoint = '/api/v2/twinpines/loyalty_programs.json';
     var programName = 'dining-passport';
-    
+    console.log("here")
     $.getJSON(host + endPoint, null, function(result) {
-        console.log("here")
+        
         lp = result['loyalty_programs'][programName];
         if (lp === undefined) {
             throw "Loyalty program does not exist";
