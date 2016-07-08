@@ -10,7 +10,6 @@ function onFormSubmit(errors, e) {
         $(el).show();
         return false;
     }
-   console.log(e.target)
     $('#reset_password_token').val(getUrlParameter('reset_password_token'))
     var formData = $('#reset-password-form').serialize();
     
