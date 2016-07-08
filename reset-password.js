@@ -7,8 +7,11 @@ function onFormSubmit(errors, e) {
             errorString += errors[i].message + '<br />';
         }
         $(el).html(errorString);
-        $(el).show()
+        $(el).show();
+        return false;
     }
+    var formData = new FormData(e.target);
+    var endpoint = host + apis['registration'];
 }
 
 $(document).ready(function(){
