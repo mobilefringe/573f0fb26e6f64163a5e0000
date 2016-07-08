@@ -1,4 +1,5 @@
 function onFormSubmit(errors, e) {
+    console.log("here")
     var el = "#error_box";
     e.preventDefault();
     if (errors.length > 0) {
@@ -8,6 +9,7 @@ function onFormSubmit(errors, e) {
         }
         $(el).html(errorString);
         $(el).show();
+        console.log("error")
         return false;
     }
     var formData = new FormData(e.target);
