@@ -52,7 +52,7 @@ $(document).ready(function(){
 })
 
 function submitForm(data, url){
-    console.log("here")
+    console.log(data)
 }
 
 
