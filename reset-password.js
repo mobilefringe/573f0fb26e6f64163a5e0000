@@ -7,6 +7,7 @@ function onFormSubmit(errors, e) {
             errorString += errors[i].message + '<br />';
         }
         $(el).html(errorString);
+        $(el).show()
     }
 }
 
