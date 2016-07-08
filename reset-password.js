@@ -52,7 +52,16 @@ $(document).ready(function(){
 })
 
 function submitForm(data, url){
-    console.log(data)
+    $.ajax({
+        url: endpoint,
+        data: formData,
+        success: onSuccess,
+        error: onError,
+        method: 'POST',
+        dataType: 'json'
+    });
+
+    return false;
 }
 
 
