@@ -64,11 +64,11 @@ function submitForm(data, url){
     return false;
 }
 
-function onSuccess(result) {      
+function resetSuccess(result) {      
     alert(result) 
 }
     
-function onError(result) {
+function resetError(result) {
     alert(result) 
 }
 
