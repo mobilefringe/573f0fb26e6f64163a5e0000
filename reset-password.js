@@ -48,7 +48,7 @@ $(document).ready(function(){
 })
 
 function submitForm(data, url){
-    
+    console.log(data)
 }
 
 
