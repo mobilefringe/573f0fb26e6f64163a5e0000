@@ -49,10 +49,6 @@ $(document).ready(function(){
 
 })
 
-function submitForm(data, url){
-    console.log(data)
-}
-
 
 var getUrlParameter = function getUrlParameter(sParam) {
     var sPageURL = decodeURIComponent(window.location.search.substring(1)),
