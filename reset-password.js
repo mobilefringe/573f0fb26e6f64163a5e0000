@@ -12,7 +12,7 @@ function onFormSubmit(errors, e) {
     }
    console.log(e.target)
    $('reset_password_token').val(getUrlParameter('reset_password_token'))
-    var formData = $('#reset-password-form')
+    var formData = $('#reset-password-form').serialize();
     
      
     var endPoint = '/api/v2/twinpines/loyalty_programs.json';
