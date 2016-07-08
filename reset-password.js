@@ -1,5 +1,4 @@
 function onFormSubmit(errors, e) {
-    console.log("here")
     var el = "#error_box";
     e.preventDefault();
     if (errors.length > 0) {
@@ -12,6 +11,7 @@ function onFormSubmit(errors, e) {
         console.log("error")
         return false;
     }
+    console.log("here")
     var formData = new FormData(e.target);
     formData.append(reset_pass_token, getUrlParameter('reset_password_token'))
     
