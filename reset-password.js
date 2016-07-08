@@ -55,8 +55,8 @@ function submitForm(data, url){
     $.ajax({
         url: url,
         data: data,
-        success: onSuccess,
-        error: onError,
+        success: resetSuccess,
+        error: resetError,
         method: 'POST',
         dataType: 'json'
     });
