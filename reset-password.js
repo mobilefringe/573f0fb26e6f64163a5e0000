@@ -36,7 +36,7 @@ $(document).ready(function(){
       {
         name: 'password',
         display: 'Password',
-        rules: 'required|min_length[4]'
+        rules: 'required|min_length[6]'
       },
       {
         name: 'password_confirmation',
