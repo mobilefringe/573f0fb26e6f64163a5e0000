@@ -54,7 +54,7 @@ $(document).ready(function(){
 function submitForm(data, url){
     var endpoint = host + url;
     $.ajax({
-        url: url,
+        url: endpoint,
         data: data,
         success: resetSuccess,
         error: resetError,
