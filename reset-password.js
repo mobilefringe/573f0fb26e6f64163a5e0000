@@ -71,6 +71,8 @@ function resetSuccess(result) {
 function resetError(result) {
     var el = "#error_box";
     $(el).html(__n['resetError'])
+    $('#reset-password-form').trigger(reset)
+    
 }
 
 
