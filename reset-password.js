@@ -20,7 +20,7 @@ function onFormSubmit(errors, e) {
             throw "Loyalty program does not exist";
         }
         var lp = result['loyalty_programs'][programName];
-        console.log(lp)
+        var submitUrl = lp.details.update_password
     }, 'json');
 }
 
