@@ -11,7 +11,17 @@ function onFormSubmit(errors, e) {
         return false;
     }
     var formData = new FormData(e.target);
-    var endpoint = host + apis['registration'];
+    $.getJSON(host + endPoint, null, function(result) {
+        // need to implement caching of properties.
+            lp = result['loyalty_programs'][programName];
+        
+        if (lp === undefined) {
+            throw "Loyalty program does not exist";
+        }
+        
+        var lp = result['loyalty_programs'][programName];
+        
+    }, 'json');
 }
 
 $(document).ready(function(){
