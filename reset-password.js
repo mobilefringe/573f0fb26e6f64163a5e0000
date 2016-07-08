@@ -64,6 +64,14 @@ function submitForm(data, url){
     return false;
 }
 
+function onSuccess(result) {      
+    alert(result) 
+}
+    
+function onError(result) {
+    alert(result) 
+}
+
 
 var getUrlParameter = function getUrlParameter(sParam) {
     var sPageURL = decodeURIComponent(window.location.search.substring(1)),
