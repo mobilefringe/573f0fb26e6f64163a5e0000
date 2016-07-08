@@ -23,7 +23,7 @@ function onFormSubmit(errors, e) {
         }
         var lp = result['loyalty_programs'][programName];
         var submitUrl = lp.details.endpoints.update_password;
-        submitForm(formData, submitUrl)
+        submitForm(formData, submitUrl);
     }, 'json');
 }
 
@@ -46,6 +46,11 @@ $(document).ready(function(){
   // $('#sign-up form').on('submit', onFormSubmit);
 
 })
+
+function submitForm(data, url){
+    
+}
+
 
 var getUrlParameter = function getUrlParameter(sParam) {
     var sPageURL = decodeURIComponent(window.location.search.substring(1)),
