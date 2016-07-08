@@ -24,6 +24,7 @@ function onFormSubmit(errors, e) {
         var lp = result['loyalty_programs'][programName];
         var submitUrl = lp.details.endpoints.update_password;
         submitForm(formData, submitUrl);
+        console.log("here")
     }, 'json');
 }
 
