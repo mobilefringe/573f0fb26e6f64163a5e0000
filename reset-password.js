@@ -53,7 +53,6 @@ $(document).ready(function(){
 
 function submitForm(data, url){
     var endpoint = host + url;
-    console.log(endpoint)
     $.ajax({
         url: endpoint,
         data: data,
