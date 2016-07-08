@@ -29,4 +29,5 @@ var __n = {
       'modalResetPassword' : "Reset your password",
       'modalEnterEmail' : "Please enter your email.",
       'modalForgetPasswordEmailSent' : "An email has been sent to you, please follow the instructions to reset your password."
+      'resetError': "Error resetting you password. Please try again."
 };
