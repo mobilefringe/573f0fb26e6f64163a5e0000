@@ -69,7 +69,8 @@ function resetSuccess(result) {
 }
     
 function resetError(result) {
-    alert(result) 
+    var el = "#error_box";
+    $(el).html(__n['resetError'])
 }
 
 
