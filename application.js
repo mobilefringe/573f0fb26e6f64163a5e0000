@@ -266,6 +266,8 @@ function getUserToken() {
     // console.log(username, password);
     myApp.showPreloader(__n['modalSignInBusy']);
 
+console.log(host + apis['sign-in'])l
+
     $.ajax({
       url: host + apis['sign-in'],
       data: {username: username, password: password, device_token: deviceToken},
