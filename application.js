@@ -269,6 +269,14 @@ function getUserToken() {
       data: {username: username, password: password, device_token: deviceToken},
       method: 'POST',
       dataType: 'json',
+      complete: function (xhr, status) {
+      if (status === 'error' || !xhr.responseText) {
+          console.log(error);
+          alert(status);
+      }
+      else {
+       console.log('It Works!');.
+      },
       success: onSignInSuccess,
       error: onSignInError
     });
