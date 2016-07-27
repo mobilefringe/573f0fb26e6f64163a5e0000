@@ -62,7 +62,7 @@
                     <h4>Congratulations</h4>
                     <p>Stop by Guest Services and Redeem Your Prize</p>
                   </div>
-                  <a href="#" onclick="javascript: triggerSignIn()"></a>
+                  <a href="#" onclick="javascript: triggerSignIn()">Sign in</a>
                   <div id="bannerWrapper">
                     <script id="bannerTemplate" type="text/template7">  
                       {% raw %}
