@@ -267,7 +267,7 @@ function getUserToken() {
     $.ajax({
       url: host + apis['sign-in'],
       data: {username: username, password: password, device_token: deviceToken},
-      dataType: 'text',
+      dataType: 'jsonp',
       method: 'POST',
       success: onSignInSuccess,
       error: onSignInError
