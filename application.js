@@ -265,9 +265,9 @@ function getUserToken() {
     myApp.showPreloader(__n['modalSignInBusy']);
 
     $.ajax({
-      dataType: 'json',
       url: host + apis['sign-in'],
       data: {username: username, password: password, device_token: deviceToken},
+      dataType: 'txt',
       method: 'POST',
       success: onSignInSuccess,
       error: onSignInError
