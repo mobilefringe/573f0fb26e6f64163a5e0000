@@ -256,6 +256,8 @@ function getUserToken() {
     failedLogin();
     console.log('Sign in error text: ' + result.responseText);
     console.log('Sign in error ready state: ' + result.readyState);
+    console.log('Sign in error status: ' + result.status);
+    console.log('Sign in error status text: ' + result.statusText);
   }
 
   function processSignIn(username, password){
