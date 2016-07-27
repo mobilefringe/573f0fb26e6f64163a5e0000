@@ -251,8 +251,6 @@ function getUserToken() {
     window.location = 'toolbar://login/signin/success';
   }
   
-  jQuery.support.cors = true;
-
   function onSignInError(result) {
     myApp.hidePreloader();
     failedLogin();
