@@ -254,7 +254,8 @@ function getUserToken() {
   function onSignInError(result) {
     myApp.hidePreloader();
     failedLogin();
-    console.log('Sign in error: ' + result.responseText);
+    console.log('Sign in error text: ' + result.responseText);
+    console.log('Sign in error ready state: ' + result.readyState);
   }
 
   function processSignIn(username, password){
