@@ -268,7 +268,7 @@ function getUserToken() {
       url: host + apis['sign-in'],
       data: {username: username, password: password, device_token: deviceToken},
       method: 'POST',
-      dataType: 'text',
+      dataType: 'json',
       success: onSignInSuccess,
       error: onSignInError
     });
