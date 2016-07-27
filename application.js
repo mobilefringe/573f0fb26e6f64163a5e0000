@@ -272,7 +272,7 @@ function getUserToken() {
       complete: function (xhr, status) {
       if (status === 'error' || !xhr.responseText) {
           console.log(error);
-          alert(status);
+          console.log(status);
       }
       else {
        console.log('It Works!');
