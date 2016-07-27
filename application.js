@@ -275,8 +275,8 @@ function getUserToken() {
           alert(status);
       }
       else {
-       console.log('It Works!');.
-      },
+       console.log('It Works!');
+      }},
       success: onSignInSuccess,
       error: onSignInError
     });
