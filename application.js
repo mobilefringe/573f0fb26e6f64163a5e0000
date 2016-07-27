@@ -268,15 +268,7 @@ function getUserToken() {
       url: host + apis['sign-in'],
       data: {username: username, password: password, device_token: deviceToken},
       method: 'POST',
-      dataType: 'json',
-      complete: function (xhr, status) {
-      if (status === 'error' || !xhr.responseText) {
-          console.log(error);
-          console.log(status);
-      }
-      else {
-       console.log('It Works!');
-      }},
+      dataType: 'text',
       success: onSignInSuccess,
       error: onSignInError
     });
