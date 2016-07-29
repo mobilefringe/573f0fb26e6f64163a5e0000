@@ -246,6 +246,7 @@ function getUserToken() {
     result = JSON.parse(result);
     console.log(result);
     console.log(result['user']['auth_token']);
+    console.log(localStorage);
     localStorage.setItem('user_auth', result['user']['auth_token']);
     
     // Hide preloader.
