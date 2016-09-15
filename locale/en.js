@@ -17,7 +17,7 @@ var __n = {
       'modalRegistrationUnknownErrorTitle' : "Hmm.. There seems to be a problem.",
       'modalRegistrationUnknownError' : "A problem occurred during registration.<br/>Please contact support if this problem persists.",      
       'modalRegistrationSuccessTitle': "Great Job!",
-      'modalRegistrationSuccessBody': 'Your account has been created.',
+      'modalRegistrationSuccessBody': 'Your account has been created. Please sign in to continue.',
       'modalSignInBusy' : 'Confirming Credentials',
       'modalSigninErrorBody' : 'It seems that the email or password are invalid. Please double check your credentials and try again.',
       'modalSigninErrorTitle' : 'Hmmm',
