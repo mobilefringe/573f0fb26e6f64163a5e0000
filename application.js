@@ -10,7 +10,7 @@ var $ = Dom7;
 var mainView = myApp.addView('.view-main', {
   // Because we want to use dynamic navbar, we need to enable it for this view:
   dynamicNavbar: true
-});t
+});
 
 var apis = null;
 var deviceToken = window.location.href.match(/dToken=(.*)/i)[1];
