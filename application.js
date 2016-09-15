@@ -277,7 +277,7 @@ console.log(host + apis['sign-in']);
   
 
   // Get the json 
-  var endPoint = '/api/v2/townsquare/loyalty_programs.json';
+  var endPoint = '/api/v2/twinpines/loyalty_programs.json';
   var programName = 'dining-passport';
   
   var _checkedInLocations = {};
