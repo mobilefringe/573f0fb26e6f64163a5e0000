@@ -10,7 +10,7 @@ var $ = Dom7;
 var mainView = myApp.addView('.view-main', {
   // Because we want to use dynamic navbar, we need to enable it for this view:
   dynamicNavbar: true
-});
+});t
 
 var apis = null;
 var deviceToken = window.location.href.match(/dToken=(.*)/i)[1];
@@ -277,7 +277,7 @@ console.log(host + apis['sign-in']);
   
 
   // Get the json 
-  var endPoint = '/api/v2/twinpines/loyalty_programs.json';
+  var endPoint = '/api/v2/townsquare/loyalty_programs.json';
   var programName = 'dining-passport';
   
   var _checkedInLocations = {};
