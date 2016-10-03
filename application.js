@@ -133,7 +133,7 @@ function getUserToken() {
 
       refreshEvents();
       fetchCheckins();
-      document.getElementById('locationsWrapper').innerHTML += data;
+      document.getElementById('locationsWrapper').innerHTML += '<p class="terms-link"><a href="#" data-popup=".terms-popup" class="open-popup">Terms & Conditions</a></p>';
     }, 'json');
 
 
