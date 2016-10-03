@@ -85,12 +85,13 @@
                         {% endraw %}
                     </script>
                   </div>
+                  <!-- Link to another page -->
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <%=/terms-and-conditions%>
+    
     
         <!-- Path to Framework7 Library JS-->
         <script src="//s3.amazonaws.com/kodekloud/sites/573f0fcf6e6f645d4a570000/text/javascript/1463600904000/framework7.min.js"></script>
