@@ -85,6 +85,7 @@
                         {% endraw %}
                     </script>
                   </div>
+                  <a href="#" data-popup=".popup-about" class="open-popup">Open</a>
                   <!-- Link to another page -->
                 </div>
               </div>
