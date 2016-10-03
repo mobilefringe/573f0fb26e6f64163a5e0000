@@ -53,7 +53,6 @@ function getUserToken() {
     
     $('#locationsWrapper').append(html);
     _locations[location.id] = location;
-    
   }
 
   function verifyCode(code, locationId, userToken) {
@@ -133,7 +132,7 @@ function getUserToken() {
 
       refreshEvents();
       fetchCheckins();
-      document.getElementById('locationsWrapper').innerHTML += '<p class="terms-link"><a href="#" data-popup=".terms-popup" class="open-popup">Terms & Conditions</a></p>';
+
     }, 'json');
 
 
