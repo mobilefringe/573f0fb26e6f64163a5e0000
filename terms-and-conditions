@@ -1,7 +1,7 @@
 <div class="popup terms-popup">
     <div class="view navbar-fixed">
         <div class="pages">
-            <div class="page">
+            <div class="page default-background">
                 <div class="navbar">
                     <div class="navbar-inner">
                         <div class="center" style="left: 107px;">Terms & Conditions</div>
