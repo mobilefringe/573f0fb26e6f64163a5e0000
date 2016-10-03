@@ -287,7 +287,8 @@ console.log(host + apis['sign-in']);
   try{
     refreshProperties();
     var theDiv = document.getElementById("locationsWrapper");
-    var content = document.createElement('<p class="terms-link"><a href="#" data-popup=".terms-popup" class="open-popup">Terms & Conditions</a></p>');
+    var content = document.createElement('div');
+    content.innerHTMl = '<p class="terms-link"><a href="#" data-popup=".terms-popup" class="open-popup">Terms & Conditions</a></p>';
     theDiv.appendChild(content);
     
   } catch (ex) {
