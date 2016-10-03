@@ -53,6 +53,7 @@ function getUserToken() {
     
     $('#locationsWrapper').append(html);
     _locations[location.id] = location;
+    
   }
 
   function verifyCode(code, locationId, userToken) {
@@ -132,7 +133,7 @@ function getUserToken() {
 
       refreshEvents();
       fetchCheckins();
-
+      document.getElementById('Result').innerHTML += data;
     }, 'json');
 
 
