@@ -85,7 +85,7 @@
                         {% endraw %}
                     </script>
                   </div>
-                  <a href="#" data-popup=".terms-popup" class="open-popup terms-link">Terms & Conditions</a>
+                  <p><a href="#" data-popup=".terms-popup" class="open-popup terms-link">Terms & Conditions</a></p>
                   <!-- Link to another page -->
                 </div>
               </div>
